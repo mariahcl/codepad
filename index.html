@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codepad</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+
+  <header>
+	<img src="images/icon.png" >
+	<h1>{<strong style="color:#2ecc71">code</strong>}</h1>
+	<h2>pad</h2> 
+	<ul>
+		<li>
+			<button id="run" class="button button-editor-solid" ng-click="runit">
+				RUN
+			</button>
+		</li>
+	</ul>
+  </header>
+  
+  <div class="stage">
+	  <div class="ng-input">
+		<textarea id="html" placeholder="html 输入端" ng-model="html"  ></textarea>
+	  </div>
+	  
+	  <div class="ng-input">
+		<textarea id="css" placeholder="css 输入端" ng-model="css" ></textarea>
+	  </div>
+	  
+	  <div class="ng-input">
+		<textarea id="javascript" placeholder="javascript 输入端" ng-model="javascript" ></textarea>
+	  </div>
+	  
+	  <div class="ng-output">
+	  
+	<div class="preloader">
+	  <div class="preloader-container">
+		<span class="animated-preloader"></span>
+	  </div>
+	</div>
+		<iframe id="pad" >
+		</iframe>
+	  </div>
+  </div>
+  
+  <footer>
+	
+  </footer>
+  
+  <script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+  
+  
+  
+</body>
+</html>
